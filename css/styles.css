@@ -1,0 +1,119 @@
+/* Basic page layout and readable default styling. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #222222;
+    background-color: #f2f4f7;
+}
+
+header,
+main,
+footer {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+h1,
+h2 {
+    color: #24344d;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #d5dbe3;
+    border-radius: 8px;
+}
+
+.form-field {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #737d8c;
+    border-radius: 4px;
+    font: inherit;
+}
+
+input:focus,
+button:focus {
+    outline: 3px solid #8bb8ff;
+    outline-offset: 2px;
+}
+
+button {
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #2459a6;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #173f79;
+}
+
+.message {
+    min-height: 1.5em;
+    margin-bottom: 0;
+    color: #a12622;
+    font-weight: bold;
+}
+
+#loot-list {
+    padding-left: 24px;
+}
+
+#loot-list li {
+    margin-bottom: 8px;
+}
+
+.empty-message {
+    color: #555555;
+}
+
+.total {
+    margin: 0;
+    color: #17633a;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+footer {
+    padding: 8px;
+    color: #555555;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 14px;
+    }
+
+    section {
+        padding: 16px;
+    }
+}

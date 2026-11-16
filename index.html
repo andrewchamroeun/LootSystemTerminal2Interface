@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple browser-based dungeon loot inventory and value calculator.">
+    <title>Dungeon Loot System</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Dungeon Loot System</h1>
+        <p>Add items to your inventory and keep track of their total value.</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="add-loot-heading">
+            <h2 id="add-loot-heading">Add Loot</h2>
+            <form id="loot-form">
+                <div class="form-field">
+                    <label for="loot-name">Loot item name</label>
+                    <input type="text" id="loot-name" name="loot-name" autocomplete="off">
+                </div>
+
+                <div class="form-field">
+                    <label for="loot-value">Loot item value</label>
+                    <input type="number" id="loot-value" name="loot-value" min="0" step="any">
+                </div>
+
+                <button type="submit" id="add-loot-button">Add Loot</button>
+            </form>
+            <p id="validation-message" class="message" role="status" aria-live="polite"></p>
+        </section>
+
+        <section aria-labelledby="inventory-heading">
+            <h2 id="inventory-heading">Loot Inventory</h2>
+            <ul id="loot-list">
+                <li class="empty-message">No loot has been added yet.</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="total-heading">
+            <h2 id="total-heading">Total Loot Value</h2>
+            <p id="total-value" class="total" aria-live="polite">0</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Dungeon Loot System</p>
+    </footer>
+</body>
+</html>
